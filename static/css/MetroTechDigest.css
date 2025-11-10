@@ -100,13 +100,15 @@ section {
 
 aside {
 
-    flex: 0 0 20%;
-    min-width: 0;
+    flex: 1;
+    min-width: 200px;
     padding: 25px;
     border-left: 2px solid gray;
-    margin: 10px 10px;
+    margin: 10px;
     border: 5px double #6B5E31;
     border-radius: 10px;
+    overflow-y: auto;   
+
 }
 
 article p {
@@ -122,6 +124,40 @@ img {
     padding: 10px;
     border: 2px solid black;
 }
+
+@media (max-width: 900px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;     
+        flex-wrap: wrap;         /* wrap if needed on very small screens */
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    nav li {
+        border-bottom: none;  
+    }
+
+    nav a {
+       display: block;
+    }
+
+    .toFlex {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    main, aside { 
+        width: calc(100% - 20px); /* subtract left + right margin if any */
+        margin: 10px;              /* uniform margin top/right/bottom/left */
+        min-width: 0;
+    }
+
+}
+
 
 figcaption {
     text-align: center;
