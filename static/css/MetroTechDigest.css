@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,h2,h3,h4 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    color:#393028; /* your original heading color */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+
+header {
+    padding: 10px 15px;
+    background: linear-gradient(to right, #8D8741, #b4a544);
+    color: white;
+    border-bottom: 7px double #E0D3B5;
+}
+
+.headerp {
+    color: #F0EAD6;
+    font-family: sans-serif;
+    max-width: 700px;
+   
+}
+
+.toFlex {
+    display: flex;
+    align-items: stretch;
+    height: calc(100vh - 60px);
+    /* full viewport height minus header/footer if needed */
+}
+
+
+nav {
+    flex: 0 0 12%;
+    min-width: 120px;
+    background: linear-gradient(to bottom, #FBEEC1, #F5E8C0);
+    border-radius: 10px;
+    border: 5px double #6B5E31;
+    margin: 10px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: sticky;
+}
+
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+    color: #3c2f22;
+
+}
+
+nav a:hover {
+    background: linear-gradient(to right, #E6CFA3, #F0DFA0);
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    border-bottom: 2px solid rgba(107, 94, 49, 0.2); /* subtle separator */
+}
+
+nav li:last-child {
+    border-bottom: none; /* remove border from last item */
+}
+
+main {
+    padding: 15px;
+    flex: 0 0 65%;
+    min-width: 140px;
+    overflow-y: auto;
+    /* vertical scroll only */
+}
+
+section {
+    margin: 0px 20px;
+    border: 5px double #6B5E31;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+aside {
+
+    flex: 0 0 20%;
+    min-width: 0;
+    padding: 25px;
+    border-left: 2px solid gray;
+    margin: 10px 10px;
+    border: 5px double #6B5E31;
+    border-radius: 10px;
+}
+
+article p {
+    color: #333;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+figcaption {
+    text-align: center;
+    color: #555;
+    font-style: italic;
+}
+
+footer {
+    background-color: #6B5E31;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+article {
+    padding: 0 25px;
+}
