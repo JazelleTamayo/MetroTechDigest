@@ -38,6 +38,7 @@ header {
     display: flex;
     align-items: stretch;
     height: calc(100vh - 60px);
+    gap: 10px;
     /* full viewport height minus header/footer if needed */
 }
 
@@ -156,10 +157,6 @@ img {
         min-width: 0;
     }
 
-    main {
-        overflow-y: auto;
-        max-height: 80vh; 
-    }
 }
 
 
